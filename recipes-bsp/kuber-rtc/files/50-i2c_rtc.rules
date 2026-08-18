@@ -1,0 +1,3 @@
+# Kuber-1000 的 RTC：Epson RX8010，i2c1 (GPIO44/45) 位址 0x32
+# i2c 無法自我描述型號，必須由使用者空間指定
+ACTION=="add", KERNEL=="i2c-1", SUBSYSTEM=="i2c", ATTR{name}=="bcm2835*", ATTR{new_device}="rx8010 0x32"
